@@ -7,10 +7,14 @@
 </head>
 <body>
 
-${film.title}
-${film.year}
-${film.director}
-
+Title: ${film.title} <br>
+Rated: ${film.rate} <br>
+Released: ${film.year} <br>
+Director: ${film.director} <br>
+Actors: ${film.actors} <br>
+<form action="addFilm">
+    <input type="submit"><br>
+</form>
 
 </body>
 </html>

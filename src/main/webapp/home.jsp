@@ -6,12 +6,17 @@
     <title>Insert title here</title>
 </head>
 <body>
+    <h2 id="para1">Find your movie! :)</h2>
 
-<form action="getFilm">
-    <input type="text" name="title"><br>
-    <input type="submit"><br>
-</form>
+    <div>
+        <form action="getFilm">
+            <input type="text" name="title"><br>
+            <input type="submit"><br>
+        </form>
+    </div>
 
+    Recent searches: <br>
+    
 
 </body>
 </html>

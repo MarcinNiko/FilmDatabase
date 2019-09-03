@@ -1,15 +1,36 @@
 package com.omdb.webapp.model;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
 public class Film {
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int fid;
     private String title;
     private String year;
     private String director;
+    private String rate;
+    private String actors;
+
+    public String getRate() {
+        return rate;
+    }
+
+    public void setRate(String rate) {
+        this.rate = rate;
+    }
+
+    public String getActors() {
+        return actors;
+    }
+
+    public void setActors(String actors) {
+        this.actors = actors;
+    }
 
     @Override
     public String toString() {

@@ -64,6 +64,8 @@ public class OmdbService {
         film.setTitle(jsonObject.getString("Title"));
         film.setDirector(jsonObject.getString("Director"));
         film.setYear(jsonObject.getString("Released"));
+        film.setRate(jsonObject.getString("Rated"));
+        film.setActors(jsonObject.getString("Actors"));
         return film;
     }
 }
